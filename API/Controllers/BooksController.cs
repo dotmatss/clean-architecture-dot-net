@@ -12,6 +12,11 @@ namespace API.Controllers
     {
         private readonly IBookRepository _bookRepository;
 
+        public BooksController(IBookRepository bookRepository)
+        {
+            _bookRepository = bookRepository ?? throw new ArgumentNullException(nameof(bookRepository));
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAll() => Ok(await _bookRepository.GetAllBooksAsync());
 
