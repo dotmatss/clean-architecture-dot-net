@@ -1,0 +1,61 @@
+# ====================
+# Visual Studio
+# ====================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ====================
+# Build output folders
+# ====================
+bin/
+obj/
+**/bin/
+**/obj/
+
+# ====================
+# Rider / IntelliJ
+# ====================
+.idea/
+
+# ====================
+# ReSharper
+# ====================
+*.DotSettings.user
+
+# ====================
+# NuGet Packages
+# ====================
+*.nupkg
+packages/
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ====================
+# Logs
+# ====================
+*.log
+
+# ====================
+# OS generated files
+# ====================
+Thumbs.db
+.DS_Store
+
+# ====================
+# Temporary files
+# ====================
+*.tmp
+*.temp
+*.vsix
+*.cache
+*.db
+
+# ====================
+# User secrets
+# ====================
+**/secrets.json
